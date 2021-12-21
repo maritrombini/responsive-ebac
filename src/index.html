@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>PlantPot</title>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="container">
+          <h2 class="logo col-4">
+        
+            
+               <img src="./assets/ppot.png" class="logotipo" width="130px" alt="" />
+              <div class="slogan  "><h1 class="exception">Cuidar de plantas faz bem.</h1></div>
+         
+          </h2>
+          <nav class="nav col-4 navegacao">
+            <a class="nav__item" href="#sobre">Sobre</a>
+            <a class="nav__item" href="#produtos">Espécies</a>
+            <a class="nav__item" href="#comocuidar">Cuidados</a>
+          </nav>
+          <div class="hero col-12"></div>
+        </div>
+      </header>
+     
+      <section id="sobre">
+        <div class="container">
+          <article class="col-12">
+            <h1 class="about">Sobre nós</h1>
+            <p>
+              Todo mundo sabe que um vaso de plantas traz à casa mais beleza,
+              harmonia e cor. Mas, para além de efeitos decorativos, elas também
+              promovem bem-estar, sendo usadas como artifício terapêutico. Isso
+              mesmo! Pesquisas revelam que cuidar de plantas é algo saudável,
+              melhora o humor e ajuda a evitar a depressão.
+            </p>
+            <br />
+            <p>
+              Olhar com mais carinho para as plantas, criar um jardim em casa,
+              deixar as flores te escolherem, respirar o aroma das plantas a sua
+              volta, conectar-se com a natureza, meditar. São essas algumas
+              atitudes que proverão benefícios e ajudam no combate à depressão.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="produtos">
+        <div class="container">
+          <article class="col-12">
+            <h1>Espécies para a casa</h1>
+            <div class="vitrine">
+              <div class="vitrine__item col-12">
+                <h3 class="vitrine__produtos">Suculentas</h3>
+                <img id="sucu" class="vitrine__img" src="../src/assets/sucu.png" alt="" />
+                <p class="vitrine__desc"></p>
+                <a
+                  data-bs-toggle="modal" data-bs-target="#modal-1"
+                  class="vitrine__button"
+                  >Saiba mais</a
+                >
+              </div>
+              <div class="vitrine__item col-12">
+                <h3 class="vitrine__produtos">Cactos</h3>
+                <img class="vitrine__img" src="../src/assets/cacto.png" alt="" />
+                <p class="vitrine__desc"></p>
+                <a
+                  data-bs-toggle="modal" data-bs-target="#modal-2"
+                  class="vitrine__button"
+                  >Saiba mais</a
+                >
+              </div>
+              <div class="vitrine__item col-12">
+                <h3 class="vitrine__produtos terrario">Terrários</h3>
+
+                <img class="vitrine__img" id="terrario" src="../src/assets/terrario.png" alt="" />
+
+                <p class="vitrine__desc"></p>
+                <a
+                data-bs-toggle="modal" data-bs-target="#modal-3"
+                class="vitrine__button"
+                >Saiba mais</a
+              >
+              </div>
+              <div class="vitrine__item col-12">
+                <h3 class="vitrine__produtos">Girassóis</h3>
+                <img id="gira" class="vitrine__img" src="../src/assets/gira.png" alt="" />
+                <p class="vitrine__desc"></p>
+                <a
+                data-bs-toggle="modal" data-bs-target="#modal-4"
+                class="vitrine__button"
+                >Saiba mais</a
+              >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="comocuidar">
+        <div class="container">
+          <h1>O que as plantas precisam para crescer?</h1>
+          <div class=" embed-container ">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/AsP3ayN13-A"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="stages container">
+          <h1 class="try">Experimente!</h1>
+          <p>
+            Manter a natureza pertinho da gente é uma forma de terapia. As
+            plantas ajudam a criar uma aura mais leve, natural e até servem para
+            purificar o ar da casa. </p><br> <p>
+              Quem pratica a jardinagem com frequência, já
+              sabe como faz bem criar esse contato com a natureza - através do
+              cultivo de plantas, flores, hortaliças e até mesmo temperos.
+            </p> 
+            Experimente e usufrua dos benefícios!
+          </p>
+          <img class="container stages" src="../src/assets/stages.png" width="600px" alt="" />
+        </div>
+      </section>
+
+      <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Suculentas</h5>
+              
+            </div>
+      
+          <div class="modal-body">
+            <h6>Você sabia?</h6>
+            <p>As suculentas simbolizam amor duradouro e intemporal, na cultura asiática elas representam prosperidade, algumas espécies como as plantas de jade são frequentemente chamadas de planta do dinheiro.</p>
+            <a href="https://www.vivadecora.com.br/revista/como-plantar-suculentas/" target="_blank">Como plantar?</a>
+          </div>
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal" >Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cactos</h5>
+            
+          </div>
+    
+        <div class="modal-body">
+          <h6>Você sabia?</h6>
+          <p>Segundo o Feng Shui, o cacto é considerado o guardião (aquele que protege a casa) e além de simbolizar resistência, força e adaptação, ele representa persistência, uma vez que sua estrutura folicular é capaz de sobreviver a ecossistemas muito áridos e quentes.</p>
+          <a href="http://blog.abcgarden.com.br/como-cultivar-cactos/" target="_blank">Como plantar?</a>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal" >Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Terrários</h5>
+          
+        </div>
+  
+      <div class="modal-body">
+        <h6>Você sabia?</h6>
+        <p>Os terrários, conhecidos também como mini jardins, são ecossistemas independentes que exigem poucos cuidados para a manutenção. Lindos, eles são ideais para espaços pequenos e conferem muito charme à decoração de qualquer ambiente.</p>
+        <a href="https://www.tuacasa.com.br/terrario/" target="_blank">Como plantar?</a>
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-4">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Girassóiss</h5>
+        
+      </div>
+
+    <div class="modal-body">
+      <h6>Você sabia?</h6>
+      <p>Nem todos os girassóis são amarelos. Existem mais de 60 variedades de girassóis ao redor do mundo, sendo que algumas dessas variedades apresentam pétalas listradas ou com tonalidades de marrom e laranja.</p>
+      <a href="https://www.vivadecora.com.br/revista/girassol/" target="_blank">Como plantar?</a>
+    </div>
+
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal" >Close</button>
+    </div>
+  </div>
+</div>
+</div>
+      <footer>
+        <div class="container">
+          <p class="col-12">
+            &copy; Todos os direitos reservados. <br />
+            <small>Desenvolvido por Mari</small>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

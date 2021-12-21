@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  align-items: center;
+
+  &__item {
+    color: $color-font;
+    font-size: $font-size-nav;
+    &:hover {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.modal-body {
+  font-size: 1.3rem;
+}
+
+.modal-body h6 {
+  color: $color-primary;
+  font-size: 1.8rem;
+}
+.modal-body a {
+  color: $color-font;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(180, 81, 0);
+  }
+}

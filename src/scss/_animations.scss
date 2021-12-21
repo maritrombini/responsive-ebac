@@ -1,0 +1,12 @@
+@keyframes toTop {
+  from {
+    top: -79px;
+    opacity: 0.1;
+    height: 0;
+  }
+  to {
+    top: 0rem;
+    opacity: 1;
+    height: 80%;
+  }
+}

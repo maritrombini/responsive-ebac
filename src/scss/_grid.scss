@@ -1,0 +1,71 @@
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: calc(8.33% * 2);
+}
+.col-3 {
+  width: calc(8.33% * 3);
+}
+.col-4 {
+  width: calc(8.33% * 4);
+}
+.col-5 {
+  width: calc(8.33% * 5);
+}
+.col-6 {
+  width: calc(8.33% * 6);
+}
+.col-7 {
+  width: calc(8.33% * 7);
+}
+.col-8 {
+  width: calc(8.33% * 8);
+}
+.col-9 {
+  width: calc(8.33% * 9);
+}
+.col-10 {
+  width: calc(8.33% * 10);
+}
+.col-11 {
+  width: calc(8.33% * 11);
+}
+.col-12 {
+  width: calc(8.33% * 12);
+}
+
+@media (max-width: 767px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+}
+/*a partir de 768 em diante*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .container .vitrine .vitrine__item > img {
+    margin: auto;
+    width: 200px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .slogan {
+    margin-left: 0px;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+}
+
+.video {
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 10%;
+}

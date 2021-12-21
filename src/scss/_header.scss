@@ -1,0 +1,34 @@
+header .container {
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .hero {
+    background-image: url(../assets/pots.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 45rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+
+    h1 {
+      padding: 1rem 0 0;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      background-size: 90%;
+      margin-top: 70px;
+      .hero img {
+        background-color: purple;
+        margin-left: -50%;
+        position: relative;
+        width: 100%;
+        max-width: none;
+        margin-right: -68%;
+        margin-top: 90px;
+      }
+    }
+  }
+}

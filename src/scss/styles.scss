@@ -1,0 +1,138 @@
+$color-font: rgb(102, 119, 83);
+$color-bg-default: rgb(248, 238, 223);
+$color-primary: rgb(255, 126, 51);
+$color-secondary: rgb(83, 14, 5);
+$font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 1.6rem;
+$font-size-nav: 1.8rem;
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+* {
+  box-sizing: border-box; //considera padding e margin como parte do calculo total da largura e altura
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: $color-bg-default;
+  font-family: $font-default;
+}
+
+h1 {
+  font-family: 'Murecho', sans-serif;
+  text-shadow: 0.2px 0.2px 4px rgb(165, 144, 125);
+  color: rgb(180, 81, 0);
+  text-align: center;
+  width: 100%;
+}
+
+article {
+  height: 100%;
+  h1 {
+    color: rgb(180, 81, 0);
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+.slogan h1 {
+  font-size: 1.5rem;
+  color: #684724;
+}
+
+.try {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.stages {
+  width: 70%;
+  text-align: center;
+  font-size: 1.7rem;
+  color: $color-secondary;
+}
+
+#root,
+header,
+section,
+footer {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+button {
+  color: #fff;
+}
+footer {
+  text-shadow: 0.2px 0.2px 4px rgb(121, 105, 92);
+}
+
+section {
+  padding: 4rem 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  font-size: 1.5rem;
+  color: $color-secondary;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 80vw;
+
+  .embed-container {
+    text-align: center;
+  }
+
+  .exception {
+    text-align: left;
+  }
+
+  /*ate 767, daqui para baixo */
+  @media (max-width: 767px) {
+    grid-template-columns: (1, 4fr);
+    max-width: 100%;
+  }
+
+  .vitrine,
+  .vitrine__item {
+    grid-template-columns: (1, 4fr);
+  }
+
+  .vitrine h3 {
+    padding-top: 35px;
+  }
+
+  .vitrine .vitrine__item > img {
+    margin: auto;
+    height: 13.75rem;
+    width: 60%;
+  }
+}
+
+@import 'vitrine';
+@import 'nav';
+@import 'header';
+@import 'sobre';
+@import 'produtos';
+@import 'animations';
+@import 'modal';
+@import 'grid';
+@import 'responsive';
