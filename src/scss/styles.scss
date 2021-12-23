@@ -45,7 +45,7 @@ article {
 }
 
 .slogan h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #684724;
 }
 
@@ -109,6 +109,23 @@ img {
   @media (max-width: 767px) {
     grid-template-columns: (1, 4fr);
     max-width: 100%;
+
+    h1 {
+      font-size: 1.4em;
+    }
+
+    .slogan {
+      width: 130%;
+    }
+
+    .slogan h1 {
+      font-size: 0.59rem;
+      margin-left: -8px;
+    }
+
+    .nav__item {
+      font-size: 1em;
+    }
   }
 
   .vitrine,

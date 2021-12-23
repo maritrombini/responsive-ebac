@@ -1,12 +1,23 @@
-@keyframes toTop {
+/*@keyframes toTop {
   from {
     top: -79px;
     opacity: 0.1;
     height: 0;
+    animation-timing-function: ease-in;
   }
   to {
     top: 0rem;
     opacity: 1;
     height: 80%;
+  }
+}
+*/
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
